@@ -126,7 +126,7 @@ const writeFileAsync = util.promisify(writeToFile);
         console.log("Thank you for your  responses! Calling to GitHub...");
 
         // Referencing API.js
-        const userInfo = await api.getUser(userResponses);
+        const userInfo = await api.gigetUser(userResponses);
         console.log("Your GitHub user info: ", userInfo);
 
         // Pass inquirer data and api data to markdown
